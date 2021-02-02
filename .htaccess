@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+   	RewriteEngine on
+   	
+   	RewriteCond %{HTTPS} off
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+   	RewriteRule    ^$ public/    [L]
+   	RewriteRule    (.*) public/$1 [L]
+</IfModule>
+
+#Options -MultiViews
+#RewriteEngine On
+#RewriteBase /Testlaravel/public/
+#
+## Redirect Trailing Slashes...
+#RewriteRule ^(.*)/$ $1 [L,R=301]
+#
+## Handle Front Controller...
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^ index.php [L]
