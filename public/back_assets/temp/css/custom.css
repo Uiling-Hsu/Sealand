@@ -1,0 +1,103 @@
+/*
+    Template Name: Admin Template
+    Author: Eric
+*/
+
+a {
+    color: #47627A;
+}
+
+a:hover {
+    color: #5E83A4;
+}
+
+
+
+.card{
+    border: solid 1px #ddd;
+    margin: 15px 5px;
+    border-radius:6px;
+}
+.card-header{
+    border-bottom: solid 1px #ddd;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.card_inner{
+    border: solid 1px #ddd;
+}
+.card_inner-header{
+    /*border-bottom: solid 1px #ddd;*/
+    background-color: #fafafa;
+    padding: 5px 10px;
+}
+table{
+    width: 95%;
+}
+table thead{
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #e3e3e3;
+}
+
+.table-bordered thead tr th{
+    border: solid 1px #ccc;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border: 1px solid #D4D5DB;
+    /*padding: 0.8rem 0.75rem;*/
+    font-size: 15px;
+}
+
+.sidebar-nav ul .sidebar-item .first-level .sidebar-item.active .sidebar-link {
+    background-color: #0E3E59;
+}
+
+.card-body {
+    padding: 0.6em 1.25rem;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    -webkit-appearance: none;
+    /*appearance: none;*/
+    /*background: #ddd;*/
+    border-radius: 1px;
+    box-sizing: border-box;
+    position: relative;
+    /*box-sizing: content-box ;*/
+    width: 18px;
+    height: 18px;
+    border-width: 0;
+    transition: all .3s linear;
+    border: solid 1px #aaa;
+    position: relative;
+    top: 4px;
+}
+input[type="checkbox"]:checked{
+    background-color: #273646;
+}
+input[type="checkbox"]:focus{
+    outline: 0 none;
+    box-shadow: none;
+}
+
+.buttons{
+    /*line-height: 60px;*/
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #107C3F;
+    border-color: #107C3F;
+}
+
+input:focus,textarea:focus{
+    outline:none
+}
